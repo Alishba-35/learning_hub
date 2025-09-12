@@ -1,0 +1,424 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: #0f172a; /* Deep navy blue */
+    color: #e2e8f0; /* Light gray text */
+    font-family: "Fira Code", "Consolas", monospace;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* Container for page content */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    color: #38bdf8; /* Calming sky blue */
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #fbbf24;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e293b !important; /* Dark slate gray */
+}
+
+.navbar .nav-link {
+    color: #e2e8f0 !important;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    transition: 0.3s;
+    color: #38bdf8 !important; /* Accent hover */
+}
+
+.offcanvas {
+    background: #1e293b;
+    color: #e2e8f0;
+}
+.offcanvas:hover {
+    transition: 0.3s;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 150px;
+    font-family: "Fira Code", "Consolas", monospace;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #334155; /* Subtle border */
+    border-radius: 6px;
+    background: #1e293b; /* Dark code area */
+    color: #e2e8f0; /* Light text */
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #38bdf8; /* Sky blue focus */
+    box-shadow: 0 0 6px #38bdf8;
+}
+
+/* Run Button */
+button.run-btn {
+  background: linear-gradient(180deg, var(--accent), #5b7cff);
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgba(124, 156, 255, 0.35);
+}
+
+button.run-btn:hover {
+    background: linear-gradient(180deg, var(--accent), #4b67d8); /* Darker green on hover */
+    transform: scale(1.03);
+}
+
+/* Output Console */
+#output {
+    background: #0f172a; /* Match page background */
+    color: #38bdf8; /* Sky blue text */
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 6px;
+    height: 150px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-family: "Fira Code", monospace;
+    border: 1px solid #334155;
+}
+
+/* Error Text in Console */
+#output.error {
+    color: #f87171; /* Soft red */
+}
+
+/* Code Example Highlight */
+pre {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: "Fira Code", monospace;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+}
+
+/* Lists for sections */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Smooth transitions */
+textarea,
+button,
+.navbar,
+.offcanvas,
+#output {
+    transition: all 0.3s ease;
+}
+h1,
+h2,
+h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e293b !important;
+}
+
+.navbar .nav-link {
+    color: #e2e8f0 !important;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #38bdf8 !important;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Code Blocks */
+pre {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: "Fira Code", monospace;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+    margin-bottom: 20px;
+}
+
+/* Interactive Editor */
+textarea {
+    width: 100%;
+    height: 150px;
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    background: #1e293b;
+    color: #e2e8f0;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 6px #38bdf8;
+}
+
+/* Run Button */
+.run-btn {
+       background-color: #0f172a; 
+    /* background: linear-gradient(180deg, var(--accent), #5b7cff); */
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgba(124, 156, 255, 0.35);
+}
+
+.run-btn:hover {
+   background-color: #0f172a; 
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgba(124, 156, 255, 0.35);
+}
+
+/* Output Console */
+#output {
+    background: #0f172a;
+    color: #38bdf8;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 6px;
+    height: 150px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-family: "Fira Code", monospace;
+    border: 1px solid #334155;
+}
+
+#output.error {
+    color: #f87171;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e293b;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #334155;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    color: #e2e8f0;
+}
+
+th {
+    background: #334155;
+}
+:root {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 16px;
+    }
+    section.card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+    section.card h2 {
+        font-size: 18px;
+        margin: 0 0 8px;
+    }
+    section.card .sub {
+        color: wheat;
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .btn-row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin: 10px 0 12px;
+    }
+    button.btn {
+       /* background: linear-gradient(180deg, var(--accent), #5b7cff); */
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgba(124, 156, 255, 0.35);
+    }
+    button.btn.secondary {
+        background: #1a2447;
+        box-shadow: none;
+        color: #d7def1;
+        border: 1px solid var(--border);
+    }
+    button.btn:active {
+        transform: translateY(1px);
+    }
+
+    .code {
+        background: var(--code);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 10px 12px;
+        overflow: auto;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas,
+            "Liberation Mono", monospace;
+        font-size: 13px;
+        line-height: 1.55;
+        margin-bottom: 10px;
+        color: #cfe1ff;
+    }
+
+    .out {
+        min-height: 80px;
+        background: #0e1530;
+        border: 1px dashed var(--border);
+        border-radius: 12px;
+        padding: 10px 12px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas,
+            "Liberation Mono", monospace;
+        font-size: 13px;
+        white-space: pre-wrap;
+        color: #e9f2ff;
+    }
+    .tag {
+        display: inline-block;
+        background: #172049;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 12px;
+        color: #c5d1ff;
+        border: 1px solid var(--border);
+    }
+    .kicker {
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 11px;
+        color: #a0abd0;
+    }
+
+    footer {
+        color: var(--muted);
+        text-align: center;
+        padding: 30px 0 60px;
+    }
+
+    details summary {
+        cursor: pointer;
+        margin: 8px 0;
+        color: var(--accent-2);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+    }
+    th,
+    td {
+        border-bottom: 1px solid var(--border);
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        color: #cbd6ff;
+        font-weight: 700;
+    }
+    td code {
+        color: #d6e6ff;
+    }
+}
+ .content-image {
+      max-width: 50%;
+      height: auto;
+      
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .content-image:hover {
+      transform: scale(1.1);
+      /* Slight zoom effect */
+    }

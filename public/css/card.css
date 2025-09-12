@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(19, 19, 59);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  width: 18rem;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  background-color: #202040; /* card body background */
+  color: whitesmoke;
+}
+
+/* Image containers */
+.card:nth-child(1) img {
+  background-color: #9b2d30; /* Dark red for HTML */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card:nth-child(2) img {
+  background-color: #1f4e78; /* Cool blue for CSS */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card:nth-child(3) img {
+  background-color: #d9a441; /* Golden for JavaScript */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card:nth-child(4) img {
+  background-color: #143d75; /* Dark blue for C++ */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Hover effect */
+.container:hover .card {
+  opacity: 0.5;
+  transform: scale(0.95);
+  
+}
+
+.container .card:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Glow effect */
+}
+.card-body p,
+.card-body button {
+  opacity: 0;
+  max-height: 0;
+  
+  overflow: hidden;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+/* Show only when card is hovered */
+.card:hover .card-body p,
+.card:hover .card-body button {
+  opacity: 1;
+  max-height: 200px; /* expand space smoothly */
+}
+/* Reflection effect for all card images */
+.card img {
+  -webkit-box-reflect: below 8px
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25), transparent 70%);
+}
+.card:hover img {
+  -webkit-box-reflect: below 5px 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent 40%);
+}
+

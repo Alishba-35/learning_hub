@@ -1,0 +1,238 @@
+/* ===========================
+   THEME BASE COLORS
+=========================== */
+:root {
+  --accent: #3b82f6; /* Main blue for gradients */
+  --background-dark: #0f172a;
+  --background-medium: #15294a;
+  --border-color: #334155;
+  --text-light: #e2e8f0;
+  --hover-color: #38bdf8;
+  --gradient: linear-gradient(180deg, var(--accent), #5b7cff);
+}
+
+/* ===========================
+   RESET & BASE STYLING
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-dark);
+  color: var(--text-light);
+  font-family: "Fira Code", "Consolas", monospace;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+h1, h2, h3 {
+  color: var(--hover-color);
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card h4 {
+  color: #5781b8;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   BUTTON STYLING
+=========================== */
+button.btn, 
+.btn-custom {
+  background: var(--background-medium);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(124, 156, 255, 0.35);
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+button.btn:hover, 
+.btn-custom:hover {
+  transform: scale(1.05);
+  background: var(--hover-color);
+  color: #fff;
+}
+
+/* ===========================
+   EXAMPLE BOXES / CARDS
+=========================== */
+.example-box {
+  background: var(--background-medium);
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(124, 156, 255, 0.25);
+}
+
+.card {
+  background: var(--background-medium);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 18px rgba(74, 68, 68, 0.25);
+  color: var(--text-light);
+}
+
+.card p {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   CODE BLOCKS
+=========================== */
+pre {
+  background: #424c5c;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: "Fira Code", monospace;
+  color: #e2e8f0;
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+pre code {
+  color: #cfe1ff;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* ===========================
+   TABLE STYLING
+=========================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--background-medium);
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+table thead {
+  background-color: var(--background-dark);
+}
+
+table thead th {
+  color: var(--hover-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--border-color);
+  font-weight: 600;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #1a2234;
+}
+
+table tbody tr:hover {
+  background-color: #223044;
+}
+
+table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table tbody td code {
+  color: #d6e6ff;
+}
+
+/* ===========================
+   INPUT FIELDS
+=========================== */
+input.form-control {
+  background: var(--background-medium);
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+}
+
+input.form-control:focus {
+  outline: none;
+  border-color: var(--hover-color);
+  box-shadow: 0 0 6px var(--hover-color);
+}
+
+/* ===========================
+   LINKS
+=========================== */
+a {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   IMAGES
+=========================== */
+.content-image {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.content-image:hover {
+  transform: scale(1.1);
+}
+
+/* ===========================
+   RESPONSIVE TABLE
+=========================== */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  table thead th,
+  table tbody td {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,179 @@
+/* ===========================
+   RESET & BASE STYLING
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: "Fira Code", "Consolas", monospace;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+h1, h2, h3, h4 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+button.btn {
+    /* background: linear-gradient(180deg, var(--accent), #5b7cff); */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(124, 156, 255, 0.35);
+}
+.navbar {
+  background-color: #1e293b !important;
+}
+
+.navbar .nav-link {
+  color: #e2e8f0 !important;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #38bdf8 !important;
+}
+
+.offcanvas {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+.offcanvas a {
+  color: #e2e8f0;
+  display: block;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.offcanvas a:hover {
+  color: #38bdf8;
+  padding-left: 5px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+.card {
+  background: #0f172a;
+  border: 1px solid #0a1f35;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 18px rgba(74, 68, 68, 0.25);
+  color: #e2e8f0;
+}
+
+.card p {
+  color: #cbd5e1;
+}
+
+/* ===========================
+   CODE BLOCKS
+=========================== */
+pre {
+  background: #424c5c;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: "Fira Code", monospace;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+pre code {
+  color: #cfe1ff;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.btn-custom {
+  background: linear-gradient(180deg, var(--accent), #5b7cff);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(124, 156, 255, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   TABLE STYLING
+=========================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e293b;
+  margin-bottom: 20px;
+  border: 1px solid #334155;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+}
+
+th {
+  background: #334155;
+  color: #cbd6ff;
+  font-weight: 700;
+}
+
+/* ===========================
+   IMAGES
+=========================== */
+.content-image {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.content-image:hover {
+  transform: scale(1.1);
+}

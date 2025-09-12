@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(to top left, #1a161b 0%, #55093d 100%);
+  font-family: 'Cassandra', cursive, sans-serif;
+  gap: 23px;
+}
+
+h1 {
+  margin-top: 10%;
+  font-family: 'Cassandra', cursive, sans-serif;
+}
+
+p {
+  display: none;
+}
+
+#btn {
+  /* Instead of float, use flexbox or positioning if needed */
+  align-self: flex-start; /* example to align button at the top */
+  margin-left: auto; /* push it to the right in flex container */
+}

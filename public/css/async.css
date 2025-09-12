@@ -1,0 +1,97 @@
+:root {
+  --accent: #3b82f6;
+  --background-dark: #0f172a;
+  --background-medium: #1e293b;
+  --border-color: #334155;
+  --text-light: #e2e8f0;
+  --hover-color: #38bdf8;
+}
+
+body {
+  background: var(--background-dark);
+  color: var(--text-light);
+  font-family: "Fira Code", monospace;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: var(--hover-color);
+  margin-bottom: 15px;
+}
+
+.card {
+  background: var(--background-medium);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 14px rgba(124, 156, 255, 0.25);
+}
+
+pre {
+  background: #424c5c;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+}
+
+code {
+  color: #cfe1ff;
+  font-family: "Fira Code", monospace;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--background-medium);
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+table thead {
+  background-color: var(--background-dark);
+}
+
+table thead th {
+  color: var(--hover-color);
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--border-color);
+  font-weight: 600;
+}
+
+table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #1a2234;
+}
+
+table tbody tr:hover {
+  background-color: #223044;
+}
+
+/* Offcanvas Links */
+.offcanvas a {
+  color: var(--text-light);
+  display: block;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.offcanvas a:hover {
+  color: var(--hover-color);
+  padding-left: 5px;
+}
