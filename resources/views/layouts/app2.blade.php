@@ -14,6 +14,15 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/basic.css') }}">
+    <!-- <style>
+        html, body {
+  height: 98%;
+  margin: 0;
+  padding: 0;
+  background: url("{{ asset('images/short_back.') }}") no-repeat center center fixed;
+  background-size: cover;
+}
+    </style> -->
 </head>
 
 <body>
